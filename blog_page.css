@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+:root {
+    --text-colormain: #f4e400;
+    --text-colorblack: #000;
+    --text-colorwhite: #fff;
+    --text-colorfooter: #e1c059ff;
+}
+
+
+/*This is the Header*/
+
+.top_logo {
+    width: 75px;
+    height: 75px;
+    overflow-x: auto;
+    overflow-y: auto;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+    transition: all ease 0.3s;
+}
+
+.bottom_logo {
+    width: 85px;
+    height: 85px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+}
+
+li, a, button{
+    color: var(--text-colormain);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+    height: 100px;
+    width: 100%;
+    z-index: 200;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    transition: all ease 0.5s;
+}
+
+.nav_items{
+    list-style: none;
+    margin-left: 170px;
+}
+
+.nav_items li{
+    display: inline-block;
+    padding: 0px 30px;
+    transition: all ease 0.3s;
+}
+
+.nav_items li a:hover{
+    color: var(--text-colorwhite);
+    transition: all ease 0.3s;
+}
+
+.socials li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+.socials li img{
+    width: 25px;
+    height: 25px;
+    filter: invert(87%) sepia(22%) saturate(5851%) hue-rotate(9deg) brightness(110%) contrast(101%);
+    transition: all ease 0.3s;
+}
+
+.socials li img:hover{
+    width: 32px;
+    height: 32px;
+    filter:  invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+    transition: all ease 0.3s;
+}
+
+
+.sticky_socials li img{
+    filter: invert(0%) sepia(7%) saturate(6%) hue-rotate(75deg) brightness(97%) contrast(101%);
+    transition: all ease 0.3s;
+}
+
+.sticky_socials li img:hover{
+    width: 32px;
+    height: 32px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+    transition: all ease 0.3s;
+}
+
+
+
+.sticky_top_logo {
+    margin-top: 25px;
+    margin-left: -10px;
+    width: 90px;
+    height: 90px;
+    filter: invert(0%) sepia(7%) saturate(6%) hue-rotate(75deg) brightness(97%) contrast(101%);
+    transition: all ease 0.3s;
+}
+
+.sticky_header {
+    background-color:var(--text-colormain);
+    height: 80px;
+    box-shadow: var(--text-colormain);
+    transition: all ease 0.5s;
+}
+
+.sticky_nav_items li a{
+    color: var(--text-colorblack);
+    transition: all ease 0.3s;
+}
+
+.sticky_nav_items li a:hover {
+    color: var(--text-colorwhite);
+    transition: all ease 0.3s;
+}
+
+
+
+/*This is the Footer*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 3%;
+    width: 100%;
+    z-index: 200;
+    background-color: var(--text-colorfooter);
+    transition: 0.6s;
+}
+
+.nav_bottom_items{
+    list-style: none;
+    margin-left: 120px;
+}
+
+.nav_bottom_items li{
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.nav_bottom_items li a{
+    color: var(--text-colorblack);
+    transition: 0.2s;
+}
+
+.nav_bottom_items li a:hover{
+    transition: 0.2s;
+    color: var(--text-colorwhite);
+}
+
+.bottom_socials {
+    margin-right: 800px;
+}
+
+.bottom_socials li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+.bottom_socials li img{
+    width: 25px;
+    height: 25px;
+    filter: invert(0%) sepia(7%) saturate(6%) hue-rotate(75deg) brightness(97%) contrast(101%);
+    transition: 0.2s;
+}
+
+.bottom_socials li img:hover{
+    width: 32px;
+    height: 32px;
+    filter:  invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+    transition: 0.2s;
+}
+
+/*This is for the body of the page*/
+
+body {
+    font-weight: bold;
+    background-color: #131316;
+    color: var(--text-colorwhite);
+    font-family: 'poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.blog_header {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+/*This is for the sections within the page*/
+
+section {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*This is for the blog information*/
+
+.blog_section_right {
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem calc((100vw-1300px) / 2);
+    height: 1200px;
+    width: 100%;
+    transition: 0.6s;
+}
+
+.blog_image_container_right {
+    position: relative;
+    width: 400px;
+}
+
+.blog_info_container_right {
+    background-color: rgb(175, 171, 171);
+    border-radius: .7rem;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    position: relative;
+    left: -100px;
+    top: 50px;
+    right: 100px;
+    width: 800px;
+    height: 1100px;
+    border-radius: .5rem;
+}
+
+/*This animates the text to show up slowly*/
+
+.blog_title_right {
+    border-radius: .5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: var(--text-colormain);;
+    animation: fade-in linear;
+    animation-timeline: view(500px 0px);
+}
+
+.blog_info_right {
+    border-radius: .5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    animation: fade-in linear;
+    animation-timeline: view(500px 0px);
+}
+
+@keyframes fade-in {
+    from {opacity: 0; filter: blur(5px);}
+    to {opacity: 1; filter: blur(0px);}
+}
+
+
+.hidden{
+    position:relative;
+    left:80px; 
+    top:20px;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+    max-width: 1920px;
+}
+
+.show{
+    position:relative;
+    left:80px; 
+    top:20px;
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    max-width: 1920px;
+}
+
+@media(perfers-reduced-motion) {
+    .hidden{
+        transition: none;
+    }
+}

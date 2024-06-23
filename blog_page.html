@@ -1,0 +1,158 @@
+<!--This is the blog page-->
+
+<!DOCTYPE html>
+<!--Color Palet: #f4e400-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--This is the title for the website-->
+    <title >Testing Website</title>
+    <link rel="stylesheet" href="blog_page.css">
+    <script defer src="blog_page.js"></script>
+    <script src="https://kit.fontawesome.com/90839497e3. js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--This is for the top breadcrumb of the page-->
+
+    <header>
+        <img class="top_logo" src="Images/pixel_maddmundstudios_full_logo.png" alt="logo">
+        <nav>
+            <ul class="nav_items">
+                <!--
+                <div class="game_dropdown">
+                    <button>Games</button>
+                    <div class="game_content">
+                        <a href="">Game One</a>
+                        <a href="">Game Two</a>
+                        <a href="">Game Three</a>
+                    </div>
+                </div>
+                -->
+                <li><a href="index.html">Main Menu</a></li>
+                <li><a href="merch_page.html">Merch</a></li>
+            </ul>
+        </nav>
+
+        <nav class="socials">
+            <li>
+                <a href="#">
+                    <img src="Images/youtube_icon.png" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="Images/tiktok_icon.png" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="Images/instagram_icon.png" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="Images/twitter_icon.png" alt="logo">
+                </a>
+            </li>       
+        </nav>
+    </header>
+
+    <secion class="blog_header">
+        <h1>
+            <div class="hidden">
+                MaddMund Blogs
+            </div>
+        </h1>
+    </secion>
+
+    <section class="blog_section_right">
+        <section class="blog_image_container_right">
+        </section>
+        <section class="blog_info_container_right">
+            <div class="blog_title_right">
+                Title and Date
+            </div>
+            <div class="blog_info_right">
+                Info Here
+            </div>
+        </section>
+    </section>
+
+    <section class="blog_section_right">
+        <section class="blog_image_container_left">
+        </section>
+        <section class="blog_info_container_right">
+            <div class="blog_title_right">
+                Title and Date
+            </div>
+            <div class="blog_info_right">
+                Info Here
+            </div>
+        </section>
+    </section>
+
+    <section class="blog_section_right">
+        <section class="blog_image_container_right">
+        </section>
+        <section class="blog_info_container_right">
+            <div class="blog_title_right">
+                Title and Date
+            </div>
+            <div class="blog_info_right">
+                Info Here
+            </div>
+        </section>
+    </section>
+
+    <!--This script triggers the heading to change when you scroll-->
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky_header", window.scrollY > 0);
+            header = document.querySelector(".nav_items");
+            header.classList.toggle("sticky_nav_items", window.scrollY > 0);
+            header = document.querySelector(".top_logo");
+            header.classList.toggle("sticky_top_logo", window.scrollY > 0);
+            header = document.querySelector(".socials");
+            header.classList.toggle("sticky_socials", window.scrollY > 0);
+        }) 
+    </script>
+
+    <footer>
+        <img class="bottom_logo" src="Images/pixel_maddmundstudios_crown_logo.png" alt="logo">
+        <nav class="bottom_socials">
+            <li>
+                <a href="#">
+                    <img src="Images/youtube_icon.png" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="Images/tiktok_icon.png" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="Images/instagram_icon.png" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="Images/twitter_icon.png" alt="logo">
+                </a>
+            </li>
+        </nav>
+        <nav>
+            <ul class="nav_bottom_items">
+                <li><a href="index.html">Main Menu</a></li>
+                <li><a href="Other Pages/merch_page.html">merch</a></li>
+                <li><a href="Other Pages/privacy_policy_page.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
